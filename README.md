@@ -48,14 +48,17 @@ Send to Gmail
 osTicket HTTP Request
 
 
-Repository Structure
+---
 
-The repository is organized into folders that document the workflow architecture, individual processing stages, setup process, example outputs, and supporting screenshots.
+## **Repository Structure**
 
-Each section is intended to explain not only what the workflow does, but also why each part matters from a SOC and security engineering perspective.
+The repository is organized into multiple folders that document the workflow architecture, individual processing stages, setup process, example outputs, and supporting screenshots.
 
-Together, these folders make the project easier to understand, easier to present publicly, and easier to expand later as the automation pipeline grows.
+Each part of the repository is designed to represent a specific layer of the automation pipeline, allowing the project to be broken down into logical, understandable sections that reflect how a real SOC workflow is built and maintained.
 
+Together, this structure ensures that the project is not only functional, but also readable, presentable, and scalable as additional automation features or integrations are added over time.
+
+```text
 n8n-soc-alert-automation-pipeline/
 ├── README.md
 ├── architecture/
@@ -73,80 +76,83 @@ n8n-soc-alert-automation-pipeline/
 │   ├── sample-normalized-output.md
 │   ├── sample-ai-analysis.md
 │   └── sample-ticket-payload.md
-└── screenshots/
-    ├── n8n-workflow.png
-    ├── edit-fields-node.png
-    ├── chatgpt-node.png
-    ├── osticket-ticket.png
-    └── gmail-alert.png
-Architecture Folder
 
-The architecture folder explains how the workflow is structured and how its major components fit together within the larger SOC alert handling process.
+---
 
-Each file in this folder is meant to describe the overall design of the automation pipeline rather than focusing only on individual nodes or screenshots.
+## **Architecture Folder**
 
-Together, these documents provide the high-level view needed to understand how the system works before going deeper into the workflow-specific details.
+The architecture folder provides a high-level overview of how the automation pipeline is structured and how each major component interacts within the overall SOC workflow.
 
-Workflows Folder
+Rather than focusing on individual node configurations, this section is intended to explain the design decisions behind the workflow and how data flows between systems from ingestion through alert escalation.
 
-The workflows folder contains detailed documentation for the major functional stages of the automation pipeline.
+Together, these documents establish a clear understanding of the system before diving into the more detailed workflow and implementation-specific sections.
 
-Each file focuses on an important workflow area such as field normalization, AI-assisted alert analysis, email alerting, or ticket creation, explaining both the technical role of the stage and its value in the overall SOC process.
+---
 
-Together, these documents break the pipeline into understandable pieces so the project can be studied, maintained, and presented more effectively.
+## **Workflows Folder**
 
-Setup Folder
+The workflows folder contains detailed documentation for each major functional stage of the automation pipeline, breaking down how alert data is processed from raw ingestion to final delivery.
 
-The setup folder documents how the workflow was built, configured, and tested inside the lab environment.
+Each workflow focuses on a specific responsibility such as field normalization, AI-assisted alert analysis, email alerting, or ticket creation, allowing each part of the pipeline to be understood both independently and as part of the larger system.
 
-Each setup note is intended to explain the logic behind the implementation, the sequence of configuration steps, and the validation process used to confirm that each part of the workflow was functioning correctly.
+Together, these workflow documents demonstrate how automation can be modularized while still contributing to a unified SOC alert handling process.
 
-Together, this section makes the project more reproducible and shows the practical engineering work required to move from design to a working automation pipeline.
+---
 
-Sample Data Folder
+## **Setup Folder**
 
-The sample-data folder contains example inputs and outputs that show how alert data changes as it moves through the workflow.
+The setup folder documents how the automation pipeline was built, configured, and validated within the lab environment.
 
-Each sample file represents a different stage of the pipeline, helping demonstrate how raw alert content is normalized, enriched with AI analysis, and prepared for final delivery into notification and ticketing systems.
+This section explains the reasoning behind implementation decisions, the order in which components were configured, and how each stage of the workflow was tested to ensure proper functionality.
 
-Together, these examples make the workflow easier to understand by showing the actual transformation of data rather than only describing it conceptually.
+Together, these setup details provide reproducibility and demonstrate the practical engineering effort required to move from concept to a working SOC automation pipeline.
 
-Screenshots Folder
+---
 
-The screenshots folder contains visual references that support the written documentation throughout the repository.
+## **Sample Data Folder**
 
-Each image is intended to show a meaningful part of the workflow, such as the full n8n pipeline, important node configurations, email delivery output, or the final osTicket case that results from the automation.
+The sample-data folder contains representative examples of alert data as it progresses through each stage of the workflow.
 
-Together, these screenshots provide proof of implementation and help make the project more concrete, readable, and portfolio-ready.
+These examples illustrate how raw alert data is transformed through normalization, enriched through AI-generated analysis, and structured for delivery into notification and ticketing systems.
 
-Security Engineering Relevance
+Together, these samples provide a concrete view of how data evolves throughout the pipeline, making the workflow easier to understand and validate.
 
-This project reflects security engineering work because it focuses on improving the operational usefulness of alerts rather than only detecting suspicious activity.
+---
 
-Each part of the workflow is designed to reduce analyst friction, improve readability, preserve important context, and connect alert generation to a structured response process.
+## **Screenshots Folder**
 
-Together, these design choices show how automation can be used to strengthen SOC workflows by making alerts easier to process, communicate, and investigate.
+The screenshots folder provides visual evidence of the automation pipeline in action, supporting the written documentation throughout the repository.
 
-Key Skills Demonstrated
+Each image captures an important component of the system, such as the full n8n workflow, node configurations, email alert output, and the resulting ticket created within the ticketing system.
 
-This project demonstrates hands-on experience with workflow automation, alert normalization, AI-assisted triage, email-based alerting, and ticketing system integration.
+Together, these visuals enhance the clarity of the project and provide proof that the workflow has been successfully implemented and tested.
 
-Each of these areas supports practical SOC and security engineering work by showing how raw telemetry can be transformed into operational outputs that analysts can use in a repeatable way.
+---
 
-Together, these skills make the project a strong example of how detection engineering can extend into real workflow and response automation.
+## **Security Engineering Relevance**
 
-Future Improvements
+This project reflects security engineering practices by focusing on improving the operational usability of alerts rather than only detecting malicious activity.
 
-The current pipeline provides a strong foundation, but it can be expanded with additional logic as the lab environment grows and new use cases are added.
+Each stage of the workflow is designed to reduce analyst friction, preserve critical context, and convert raw detection data into actionable intelligence that can be used within a structured response process.
 
-Possible future improvements include enrichment from threat intelligence sources, duplicate alert suppression, severity-based branching, automatic ticket assignment, tagging by detection family, and additional delivery channels such as Slack or Teams.
+Together, these design decisions demonstrate how automation can enhance SOC efficiency by bridging the gap between detection, analysis, communication, and incident tracking.
 
-Together, these possible enhancements show how the workflow can evolve from a focused lab project into a more mature and feature-rich SOC automation pipeline.
+---
 
-Documentation Goal
+## **Key Skills Demonstrated**
 
-This repository is intended to be both a technical reference and a portfolio project that shows the thought process behind building a practical alert automation workflow.
+This project demonstrates practical experience with workflow automation, alert normalization, AI-assisted triage, email-based alerting, and ticketing system integration.
 
-Each document is written to explain the project in a way that is readable, technically grounded, and detailed enough to show how the workflow supports real SOC functions.
+Each of these skills contributes to real-world SOC and security engineering work by showing how raw telemetry can be transformed into structured outputs that analysts can consistently act upon.
 
-Together, the files in this repository present the project not just as an automation demo, but as an example of security engineering work that connects detection, triage, notification, and incident tracking.
+Together, these capabilities highlight an understanding of how detection engineering extends into full operational workflows.
+
+---
+
+## **Documentation Goal**
+
+This repository is intended to serve as both a technical reference and a portfolio project that showcases the design and implementation of a complete SOC alert automation workflow.
+
+Each section is written to be clear, technically grounded, and detailed enough to demonstrate how the system supports real-world security operations.
+
+Together, the documentation presents the project as more than a simple automation demo, positioning it as a practical example of security engineering that connects detection, triage, notification, and incident response.
