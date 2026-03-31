@@ -58,6 +58,27 @@ Each part of the repository is designed to represent a specific layer of the aut
 
 Together, this structure ensures that the project is not only functional, but also readable, presentable, and scalable as additional automation features or integrations are added over time.
 
+```text
+n8n-soc-alert-automation-pipeline/
+├── README.md
+├── architecture/
+│   ├── workflow-diagram.md
+│   └── system-overview.md
+├── workflows/
+│   ├── field-normalization.md
+│   ├── alert-analysis.md
+│   ├── ticket-creation.md
+│   └── gmail-alerting.md
+├── setup/
+│   └── setup-and-testing.md
+├── sample-data/
+│   ├── sample-alert-document.md
+│   ├── sample-normalized-output.md
+│   ├── sample-ai-analysis.md
+│   └── sample-ticket-payload.md
+
+```
+
 
 ---
 
