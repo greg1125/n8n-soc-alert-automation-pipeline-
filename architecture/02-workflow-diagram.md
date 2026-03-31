@@ -14,6 +14,8 @@ This diagram is important because it shows that the project is not only about de
 
 ## **Workflow Objective**
 
+![Workflow Diagram](n8n-workflow.png)
+
 The main objective of the workflow is to transform raw detection output into something that is operationally useful for a SOC-style process.
 
 In many lab environments, the workflow stops once a detection rule fires and an alert appears in the SIEM. While that proves a detection works, it does not fully reflect the work that happens in an actual security operations environment where alerts need to be reviewed, communicated, and escalated in a structured way.
