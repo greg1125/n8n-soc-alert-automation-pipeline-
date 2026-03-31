@@ -30,7 +30,7 @@ Each stage improves the quality and usefulness of the alert by converting raw te
 
 Together, these stages create a repeatable workflow that supports both immediate alert visibility and longer-term investigation tracking.
 
-```text
+
 Schedule Trigger
     ↓
 HTTP Request
@@ -58,7 +58,7 @@ Each part of the repository is designed to represent a specific layer of the aut
 
 Together, this structure ensures that the project is not only functional, but also readable, presentable, and scalable as additional automation features or integrations are added over time.
 
-```text
+
 n8n-soc-alert-automation-pipeline/
 ├── README.md
 ├── architecture/
