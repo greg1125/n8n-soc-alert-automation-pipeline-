@@ -30,7 +30,7 @@ Each stage improves the quality and usefulness of the alert by converting raw te
 
 Together, these stages create a repeatable workflow that supports both immediate alert visibility and longer-term investigation tracking.
 
-
+```text
 Schedule Trigger
     ↓
 HTTP Request
@@ -47,7 +47,7 @@ Send to Gmail
     ↓
 osTicket HTTP Request
 
-
+```
 ---
 
 ## **Repository Structure**
