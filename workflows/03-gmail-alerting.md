@@ -10,6 +10,8 @@ Once the alert has been normalized and analyzed, this stage formats the data int
 
 This step improves visibility and makes it easier to respond to alerts in a timely manner.
 
+![Gmail Alert Output](ai_email_alert.png)
+
 ---
 
 ## **Purpose**
