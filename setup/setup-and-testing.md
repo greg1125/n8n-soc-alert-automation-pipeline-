@@ -10,7 +10,7 @@ Rather than only showing the final working state, this section explains the step
 
 The goal is to demonstrate not just what the system does, but how it was actually implemented and verified.
 
-For more information about how I built this, visit - https://github.com/greg1125/SOC-Detection-Engineering-lab
+For more information about how I built the lab, visit - https://github.com/greg1125/SOC-Detection-Engineering-lab
 
 ---
 
