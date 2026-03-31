@@ -10,6 +10,8 @@ By the time the workflow reaches this stage, the alert has already been normaliz
 
 This stage is what transitions the workflow from simple alert notification into a formal incident tracking process.
 
+![osTicket Alert](ai_ticket_alert.png)
+
 ---
 
 ## **Purpose**
