@@ -117,15 +117,6 @@ These examples illustrate how raw alert data is transformed through normalizatio
 
 Together, these samples provide a concrete view of how data evolves throughout the pipeline, making the workflow easier to understand and validate.
 
----
-
-## **Screenshots Folder**
-
-The screenshots folder provides visual evidence of the automation pipeline in action, supporting the written documentation throughout the repository.
-
-Each image captures an important component of the system, such as the full n8n workflow, node configurations, email alert output, and the resulting ticket created within the ticketing system.
-
-Together, these visuals enhance the clarity of the project and provide proof that the workflow has been successfully implemented and tested.
 
 ---
 
